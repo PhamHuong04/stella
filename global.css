@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  line-height: normal;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+  --title: "Playfair Display";
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-lg: 18px;
+  --title-size: 55px;
+  --font-size-17xl: 36px;
+  --font-size-xl: 20px;
+  --font-size-sm: 14px;
+  --font-size-23xl: 42px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-tan: #c09175;
+  --title: #76361a;
+  --text: #aa6f5d;
+  --color-antiquewhite: #ffefe0;
+  --color-silver: #c4c4c4;
+
+  /* border radiuses */
+  --br-341xl: 360px;
+}

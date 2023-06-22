@@ -1,0 +1,523 @@
+.banner {
+  background-image: url("./image/jasmin-chew-WKD2vIe8Rb0-unsplash 1.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: var(--color-antiquewhite);
+  background-size: contain;
+  background-position: top;
+  height: 800px;
+}
+.banner .content {
+  transform: translate(0, 200%);
+  text-align: center;
+  padding: 0 10%;
+}
+.banner h1 {
+  margin: 0;
+  color: var(--title);
+  font-size: var(--font-size-17xl);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+}
+.banner .discription {
+  color: var(--text);
+  font-size: var(--font-size-sm);
+  margin: 20px 0 50px;
+}
+.banner a {
+  text-decoration: none;
+  font-size: var(--font-size-5xl);
+  padding: 10px 20px;
+  background-color: var(--color-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--title);
+  font-weight: 500;
+  border: 1px solid var(--title);
+}
+a:hover {
+  background-color: var(--text);
+  color: var(--color-white);
+}
+
+.benefits {
+  margin: 0 5%;
+}
+.benefits h2 {
+  font-size: 20px;
+  color: var(--title);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 40px;
+}
+.benefits .benefits1 {
+  display: flex;
+  margin: 10px;
+}
+.benefits .benefits1 img {
+  width: 70px;
+  height: 60px;
+}
+.benefits .content {
+  margin-left: 30px;
+}
+.benefits .benefits1 .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--title);
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+.benefits .benefits1 p {
+  font-size: var(--font-size-sm);
+  color: var(--text);
+}
+.time {
+  background-image: url("./image/angelica-echeverry-mI82mfLu538-unsplash 1.png");
+  background-color: var(--color-tan);
+  height: 480px;
+}
+
+.time .content {
+  transform: translate(0, 150%);
+}
+.time h2 {
+  color: var(--color-white);
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+.time .count-down {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.time .box {
+  color: var(--color-white);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.time .number {
+  font-size: var(--font-size-5xl);
+  margin: 10px 0 10px;
+}
+.time .text {
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin: 10px 0 10px;
+}
+.time .shop-now {
+  font-size: 16px;
+}
+.products {
+  margin: 50px 5%;
+}
+.products .title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  color: var(--title);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.products .product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+}
+
+.products .product {
+  width: 165px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.products .product img {
+  width: 100%;
+}
+.products .product .name {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--title);
+  font-family: "Playfair Display", serif;
+}
+
+.products .product .price {
+  display: flex;
+  font-size: 13px;
+  color: var(--text);
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.products .product .old-price {
+  margin-right: 10px;
+  text-decoration: line-through;
+}
+.products .product a {
+  text-decoration: none;
+  font-size: 10px;
+  padding: 10px 20px;
+  background-color: var(--color-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 500;
+  border: 1px solid var(--text);
+}
+
+.product a:hover {
+  background-color: var(--text);
+  color: var(--color-white);
+}
+
+.bundle {
+  background-image: url("./image/tessa-wilson-ECr_8nuXpBA-unsplash 1.png");
+  height: 239px;
+  background-color: var(--color-white);
+}
+
+.collection h3 {
+  margin: 0;
+}
+
+.collection .content {
+  transform: translate(0, 300%);
+}
+.collection .title-collection {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--title);
+  font-family: "Playfair Display", serif;
+}
+.collection .discription {
+  margin: 10px 0 0;
+}
+
+.rings {
+  margin-top: 30px;
+  background-image: url("./image/mel-BN0HcaBdPug-unsplash 1.png");
+  height: 239px;
+  background-color: var(--color-white);
+}
+.testimonials {
+  background-color: var(--color-antiquewhite);
+  margin: 50px 0;
+  text-align: center;
+}
+
+.testimonials .title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: var(--title);
+  padding: 20px 0;
+}
+
+.testimonials .content {
+  font-size: 14px;
+  padding: 0 10%;
+  color: var(--text);
+}
+
+.testimonials .name {
+  text-transform: uppercase;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+}
+.testimonials h6 {
+  margin: 0 0 20px;
+}
+.testimonials .image-author {
+  padding-bottom: 30px;
+}
+.testimonials .content .image-author:nth-child(old) {
+  visibility: hidden;
+}
+.social {
+  margin: 0 5% 20px;
+}
+.social .title {
+  font-size: 20px;
+  font-weight: 700px;
+  text-align: center;
+  color: var(--title);
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+}
+.social .list-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.social .image {
+  margin: 10px 20px 10px 0px;
+}
+
+.services .image {
+  width: 100%;
+  height: 202px;
+  object-fit: cover;
+}
+.services .content {
+  padding: 30px 0;
+  background-color: var(--color-tan);
+  margin-top: -10px;
+  color: var(--color-white);
+}
+.services h2 {
+  margin: 0;
+  text-align: center;
+}
+.services .title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.services .content .title:first-child {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.services .content .title:last-child {
+  text-transform: capitalize;
+}
+
+.services .content .list {
+  margin-left: 20%;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.services .content li {
+  margin-bottom: 20px;
+}
+
+.action .content {
+  text-align: center;
+  background-color: var(--color-antiquewhite);
+  padding: 50px 0 100px;
+}
+.action .title {
+  color: var(--title);
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+.action .discription {
+  padding: 10px 10%;
+  color: var(--text);
+}
+.action a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: var(--color-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 500;
+  border: 1px solid var(--text);
+}
+
+.action a:hover {
+  background-color: var(--text);
+  color: var(--color-white);
+}
+
+.action img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    background-position: right;
+    background-size: 50% auto;
+  }
+  .banner .content {
+    transform: translate(0, 50%);
+    text-align: left;
+    width: 30%;
+  }
+  .banner h1 {
+    font-size: 72px;
+  }
+  .banner .discription {
+    font-size: 24px;
+  }
+  .banner a {
+    font-size: 36px;
+    padding: 10px 30px;
+  }
+  .benefits {
+    margin: 100px 10%;
+  }
+  .benefits h2 {
+    font-size: 55px;
+    padding: 0 25%;
+  }
+  .benefits .benefit-list {
+    display: flex;
+  }
+  .benefits .benefits1 img {
+    width: 70px;
+    height: 70px;
+  }
+  .benefits .benefits1 .title {
+    font-size: 24px;
+  }
+  .benefits .benefits1 p {
+    font-size: 18px;
+    width: 80%;
+  }
+  .time {
+    height: 480px;
+    background-position: left;
+  }
+  .time .content {
+    transform: translate(100%, 50%);
+  }
+  .time h2 {
+    font-size: 55px;
+  }
+  .time .number {
+    font-size: 42px;
+  }
+  .time .text {
+    font-size: 24px;
+  }
+  .time .shop-now {
+    font-size: 24px;
+    margin-left: 35%;
+  }
+  .products {
+    margin: 50px 10%;
+  }
+  .products .title {
+    font-size: 55px;
+    margin-bottom: 50px;
+  }
+  .products .product-list {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+  .products .product {
+    width: 270px;
+  }
+  .products .product .name {
+    font-size: 20px;
+  }
+  .products .product .price {
+    font-size: 20px;
+  }
+  .products .product a {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+  .collection {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bundle,
+  .rings {
+    width: 45%;
+    background-position: top;
+    background-size: cover;
+    margin: 0;
+    height: 450px;
+  }
+  .collection .content {
+    transform: translate(0, 430%);
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .collection .title-collection {
+    font-size: 36px;
+    width: 100%;
+  }
+  .collection .discription {
+    font-size: 18px;
+    margin: 10px 0 0;
+    width: 100%;
+  }
+  .testimonials .title {
+    padding: 30px 0;
+    font-size: 55px;
+  }
+  .testimonials .content {
+    font-size: 18px;
+    padding: 0 30%;
+  }
+  .testimonials .name {
+    font-size: 18px;
+  }
+  .testimonials .image-author {
+    width: 100px;
+    margin-left: 30px;
+  }
+  .testimonials .active {
+    width: 130px;
+  }
+  .social {
+    margin: 0;
+  }
+  .social .title {
+    font-size: 55px;
+  }
+  .social .list-image {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  .social .image {
+    margin: 10px 20px 10px 0px;
+    width: 370px;
+  }
+  .services {
+    display: flex;
+  }
+  .services .image {
+    width: 50%;
+    height: 1015px;
+    object-fit: cover;
+  }
+  .services .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .services .title {
+    font-size: 48px;
+  }
+  .services .content .title:first-child {
+    font-size: 85px;
+  }
+  .services .content .list {
+    margin-left: 0;
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  .services .content li {
+    margin-bottom: 30px;
+  }
+  .action .title {
+    font-size: 55px;
+  }
+  .action .discription {
+    padding: 10px 35% 50px;
+    font-size: 18px;
+  }
+  .action a {
+    font-size: 24px;
+    padding: 10px 40px;
+  }
+}
