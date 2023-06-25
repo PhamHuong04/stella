@@ -1,16 +1,25 @@
+.container {
+  width: 344px;
+  margin: 0 auto;
+}
 .banner {
   background-image: url("./image/jasmin-chew-WKD2vIe8Rb0-unsplash 1.png");
   background-repeat: no-repeat;
-  position: relative;
   background-color: var(--color-antiquewhite);
   background-size: contain;
   background-position: top;
-  height: 800px;
+  height: 798px;
+}
+
+.banner .container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 .banner .content {
-  transform: translate(0, 200%);
   text-align: center;
-  padding: 0 10%;
+  width: 90%;
+  margin: 0 auto;
 }
 .banner h1 {
   margin: 0;
@@ -19,11 +28,12 @@
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
 }
 .banner .discription {
   color: var(--text);
   font-size: var(--font-size-sm);
-  margin: 20px 0 50px;
+  margin-bottom: 40px;
 }
 .banner a {
   text-decoration: none;
@@ -35,6 +45,8 @@
   color: var(--title);
   font-weight: 500;
   border: 1px solid var(--title);
+  display: inline-block;
+  margin-bottom: 60px;
 }
 a:hover {
   background-color: var(--text);
@@ -42,7 +54,7 @@ a:hover {
 }
 
 .benefits {
-  margin: 0 5%;
+  margin: 50px 0 30px;
 }
 .benefits h2 {
   font-size: 20px;
@@ -50,7 +62,8 @@ a:hover {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   text-align: center;
-  padding: 20px 40px;
+  width: 80%;
+  margin: 0 auto 20px;
 }
 .benefits .benefits1 {
   display: flex;
@@ -80,9 +93,6 @@ a:hover {
   height: 480px;
 }
 
-.time .content {
-  transform: translate(0, 150%);
-}
 .time h2 {
   color: var(--color-white);
   font-family: "Playfair Display", serif;
@@ -97,7 +107,6 @@ a:hover {
   color: var(--color-white);
   font-weight: 700;
   text-align: center;
-  margin-bottom: 40px;
 }
 .time .number {
   font-size: var(--font-size-5xl);
@@ -111,18 +120,17 @@ a:hover {
 }
 .time .shop-now {
   font-size: 16px;
+  display: inline-block;
+  margin: 20px 0 50px;
 }
-.products {
-  margin: 50px 5%;
-}
+
 .products .title {
   font-size: 20px;
   font-weight: 700;
-  margin: 0;
   font-family: "Playfair Display", serif;
   color: var(--title);
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px auto;
 }
 .products .product-list {
   display: grid;
@@ -133,7 +141,7 @@ a:hover {
 .products .product {
   width: 165px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .products .product img {
   width: 100%;
@@ -167,6 +175,7 @@ a:hover {
   color: var(--text);
   font-weight: 500;
   border: 1px solid var(--text);
+  display: inline-block;
 }
 
 .product a:hover {
@@ -185,7 +194,10 @@ a:hover {
 }
 
 .collection .content {
-  transform: translate(0, 300%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .collection .title-collection {
   font-size: 22px;
@@ -194,11 +206,11 @@ a:hover {
   font-family: "Playfair Display", serif;
 }
 .collection .discription {
-  margin: 10px 0 0;
+  margin: 10px 0 20px;
 }
 
 .rings {
-  margin-top: 30px;
+  margin-top: 20px;
   background-image: url("./image/mel-BN0HcaBdPug-unsplash 1.png");
   height: 239px;
   background-color: var(--color-white);
@@ -238,8 +250,9 @@ a:hover {
 .testimonials .review img:nth-child(odd) {
   visibility: hidden;
 }
+
 .social {
-  margin: 0 5% 20px;
+  width: 100%;
 }
 .social .title {
   font-size: 20px;
@@ -252,9 +265,11 @@ a:hover {
 .social .list-image {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .social .image {
-  margin: 10px 20px 10px 0px;
+  margin-bottom: 10px;
 }
 
 .services .image {
@@ -286,7 +301,7 @@ a:hover {
 }
 
 .services .content .list {
-  margin-left: 20%;
+  margin: 0 20%;
   font-size: 14px;
   font-weight: 500;
   margin-top: 20px;
@@ -320,6 +335,7 @@ a:hover {
   color: var(--text);
   font-weight: 500;
   border: 1px solid var(--text);
+  display: inline-block;
 }
 
 .action a:hover {
@@ -333,14 +349,27 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
   .banner {
     background-position: right;
-    background-size: 50% auto;
+    background-size: contain;
+  }
+
+  .banner .container {
+    height: 100%;
   }
   .banner .content {
-    transform: translate(0, 50%);
     text-align: left;
-    width: 30%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
   }
   .banner h1 {
     font-size: 72px;
@@ -353,32 +382,41 @@ a:hover {
     padding: 10px 30px;
   }
   .benefits {
-    margin: 100px 10%;
+    margin: 100px 0;
   }
   .benefits h2 {
     font-size: 55px;
-    padding: 0 25%;
+    width: 65%;
+    margin: 0 auto 40px;
   }
   .benefits .benefit-list {
     display: flex;
+    justify-content: space-between;
   }
   .benefits .benefits1 img {
     width: 70px;
     height: 70px;
+  }
+  .benefits .benefits1 {
+    width: 30%;
   }
   .benefits .benefits1 .title {
     font-size: 24px;
   }
   .benefits .benefits1 p {
     font-size: 18px;
-    width: 80%;
   }
   .time {
     height: 480px;
     background-position: left;
   }
+  .time .container {
+    display: flex;
+    justify-content: flex-end;
+  }
   .time .content {
-    transform: translate(100%, 50%);
+    width: 45%;
+    text-align: center;
   }
   .time h2 {
     font-size: 55px;
@@ -388,6 +426,10 @@ a:hover {
   }
   .time .text {
     font-size: 24px;
+  }
+  .time .count-down {
+    justify-content: space-evenly;
+    width: 90%;
   }
   .time .shop-now {
     font-size: 24px;
@@ -431,7 +473,7 @@ a:hover {
     height: 450px;
   }
   .collection .content {
-    transform: translate(0, 430%);
+    /* transform: translate(0, 430%); */
     width: 100%;
     text-align: center;
     padding: 0;
@@ -462,7 +504,7 @@ a:hover {
     margin-left: 30px;
   }
   .testimonials .review img:nth-child(odd) {
-   visibility: inherit;
+    visibility: inherit;
   }
   .testimonials .active {
     width: 130px;
