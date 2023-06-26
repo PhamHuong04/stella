@@ -471,12 +471,15 @@ a:hover {
     background-size: cover;
     margin: 0;
     height: 450px;
+    padding-bottom: 20px;
   }
   .collection .content {
-    /* transform: translate(0, 430%); */
     width: 100%;
     text-align: center;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .collection .title-collection {
@@ -517,12 +520,16 @@ a:hover {
   }
   .social .list-image {
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
     margin-bottom: 20px;
+    justify-items: center;
+  }
+
+  .social .container {
+    width: 100%;
+    margin: 0;
   }
   .social .image {
-    margin: 10px 20px 10px 0px;
-    width: 370px;
+    width: 430px;
   }
   .services {
     display: flex;
