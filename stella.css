@@ -409,6 +409,7 @@ a:hover {
   .time {
     height: 480px;
     background-position: left;
+    background-size: 50% auto;
   }
   .time .container {
     display: flex;
