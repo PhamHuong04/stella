@@ -28,12 +28,16 @@
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Playfair Display", serif;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+}
+
+.banner p {
+  margin: 0;
 }
 .banner .discription {
   color: var(--text);
   font-size: var(--font-size-sm);
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 .banner a {
   text-decoration: none;
@@ -97,11 +101,13 @@ a:hover {
   color: var(--color-white);
   font-family: "Playfair Display", serif;
   margin: 0;
+  margin-bottom: 20px;
 }
 .time .count-down {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 auto;
 }
 .time .box {
   color: var(--color-white);
@@ -110,18 +116,18 @@ a:hover {
 }
 .time .number {
   font-size: var(--font-size-5xl);
-  margin: 10px 0 10px;
+  margin: 10px 0;
 }
 .time .text {
   font-size: 14px;
   font-weight: normal;
   text-transform: capitalize;
-  margin: 10px 0 10px;
+  margin: 10px 0;
 }
 .time .shop-now {
   font-size: 16px;
   display: inline-block;
-  margin: 20px 0 50px;
+  margin: 20px auto 0;
 }
 
 .products .title {
@@ -380,10 +386,10 @@ a:hover {
   }
   .banner a {
     font-size: 36px;
-    padding: 10px 30px;
+    padding: 10px 50px;
   }
   .benefits {
-    margin: 100px 0;
+    margin: 91px 0;
   }
   .benefits h2 {
     font-size: 55px;
@@ -399,7 +405,7 @@ a:hover {
     height: 70px;
   }
   .benefits .benefits1 {
-    width: 30%;
+    width: 28%;
   }
   .benefits .benefits1 .title {
     font-size: 24px;
@@ -435,7 +441,6 @@ a:hover {
   }
   .time .shop-now {
     font-size: 24px;
-    margin-left: 35%;
   }
   .products {
     margin: 50px 10%;
