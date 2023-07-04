@@ -548,9 +548,9 @@ a:hover {
   .social {
     margin: 0;
   }
-  .social .container {
+  /* .social .container {
     width: 100%;
-  }
+  } */
   .social .title {
     font-size: 55px;
     margin-bottom: 40px;
@@ -560,11 +560,11 @@ a:hover {
     margin-bottom: 20px;
   }
 
-  .social .image {
+  /* .social .image {
     width: 370px;
     margin-right: 20px;
     transition: opacity 1s ease-in-out;
-  }
+  } */
 
   .social .container {
     max-width: 100%;
@@ -573,6 +573,8 @@ a:hover {
   .social .image {
     max-width: 370px;
     width: 100%;
+    margin-right: 20px;
+    transition: opacity 1s ease-in-out;
   }
   .social img {
     width: 100%;
