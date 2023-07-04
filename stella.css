@@ -1,13 +1,12 @@
 .container {
-  width: 344px;
+  max-width: 344px;
   margin: 0 auto;
 }
+h2 {
+  margin: 0;
+}
+
 .banner {
-  background-image: url("./image/jasmin-chew-WKD2vIe8Rb0-unsplash 1.png");
-  background-repeat: no-repeat;
-  background-color: var(--color-antiquewhite);
-  background-size: contain;
-  background-position: top;
   height: 798px;
 }
 
@@ -15,10 +14,11 @@
   height: 100%;
   display: flex;
   align-items: flex-end;
+  background-color: var(--color-antiquewhite);
 }
 .banner .content {
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .banner h1 {
@@ -39,7 +39,7 @@
   font-size: var(--font-size-sm);
   margin-bottom: 37px;
 }
-.banner a {
+a {
   text-decoration: none;
   font-size: var(--font-size-5xl);
   padding: 10px 20px;
@@ -50,7 +50,6 @@
   font-weight: 500;
   border: 1px solid var(--title);
   display: inline-block;
-  margin-bottom: 60px;
 }
 a:hover {
   background-color: var(--text);
@@ -59,6 +58,7 @@ a:hover {
 
 .benefits {
   margin: 50px 0 30px;
+  width: 100%;
 }
 .benefits h2 {
   font-size: 20px;
@@ -92,9 +92,10 @@ a:hover {
   color: var(--text);
 }
 .time {
-  background-image: url("./image/angelica-echeverry-mI82mfLu538-unsplash 1.png");
-  background-color: var(--color-tan);
   height: 480px;
+}
+.time .container {
+  background-color: var(--color-tan);
 }
 
 .time h2 {
@@ -145,7 +146,7 @@ a:hover {
 }
 
 .products .product {
-  width: 165px;
+  max-width: 165px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -153,11 +154,16 @@ a:hover {
   width: 100%;
 }
 .products .product .name {
-  margin: 10px 0 0;
+  margin: 17px 0 0;
   font-size: 14px;
   font-weight: 700;
   color: var(--title);
   font-family: "Playfair Display", serif;
+  line-height: normal;
+}
+
+.products .product p {
+  margin: 10px 0 17px;
 }
 
 .products .product .price {
@@ -165,7 +171,6 @@ a:hover {
   font-size: 13px;
   color: var(--text);
   justify-content: center;
-  margin-bottom: 10px;
 }
 .products .product .old-price {
   margin-right: 10px;
@@ -174,7 +179,7 @@ a:hover {
 .products .product a {
   text-decoration: none;
   font-size: 10px;
-  padding: 10px 20px;
+  padding: 8px 15px;
   background-color: var(--color-white);
   text-transform: uppercase;
   cursor: pointer;
@@ -276,12 +281,11 @@ a:hover {
   max-width: 100%;
 }
 .social .image {
-  max-width: 90%;
+  width: 90%;
 }
 
 .services .image {
   width: 100%;
-  height: 202px;
   object-fit: cover;
 }
 .services .content {
@@ -308,7 +312,6 @@ a:hover {
 }
 
 .services .content .list {
-  margin: 0 20%;
   font-size: 14px;
   font-weight: 500;
   margin-top: 20px;
@@ -321,12 +324,13 @@ a:hover {
 .action .content {
   text-align: center;
   background-color: var(--color-antiquewhite);
-  padding: 50px 0 100px;
+  padding: 83px 0 95px;
 }
 .action .title {
   color: var(--title);
   font-size: 20px;
   font-family: "Playfair Display", serif;
+  margin: 0;
 }
 .action .discription {
   padding: 10px 10%;
@@ -357,26 +361,31 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
   }
   .banner {
-    background-position: right;
-    background-size: contain;
+    display: flex;
+    width: 100%;
   }
 
   .banner .container {
     height: 100%;
+    width: 50%;
+    align-items: center;
+  }
+  .banner img {
+    width: 50%;
+    object-fit: cover;
   }
   .banner .content {
     text-align: left;
-    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     height: 100%;
-    margin: 0;
+    padding: 0 40px 0 20%;
   }
   .banner h1 {
     font-size: 72px;
@@ -389,7 +398,7 @@ a:hover {
     padding: 10px 50px;
   }
   .benefits {
-    margin: 91px 0;
+    margin: 91px auto;
   }
   .benefits h2 {
     font-size: 55px;
@@ -414,16 +423,20 @@ a:hover {
     font-size: 18px;
   }
   .time {
-    height: 480px;
-    background-position: left;
-    background-size: 50% 100%;
+    display: flex;
+  }
+  .time img {
+    width: 50%;
+    object-fit: cover;
   }
   .time .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    width: 50%;
+    padding-left: 70px;
+    align-items: center;
   }
   .time .content {
-    width: 45%;
     text-align: center;
   }
   .time h2 {
@@ -443,7 +456,7 @@ a:hover {
     font-size: 24px;
   }
   .products {
-    margin: 50px 10%;
+    margin: 100px auto;
   }
   .products .title {
     font-size: 55px;
@@ -452,10 +465,10 @@ a:hover {
   .products .product-list {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 68px;
   }
   .products .product {
-    width: 270px;
+    max-width: 270px;
   }
   .products .product .name {
     font-size: 20px;
@@ -473,7 +486,7 @@ a:hover {
   }
   .bundle,
   .rings {
-    width: 45%;
+    width: 49%;
     background-position: top;
     background-size: cover;
     margin: 0;
@@ -498,13 +511,17 @@ a:hover {
     margin: 10px 0 0;
     width: 100%;
   }
+  .testimonials {
+    padding: 50px 0 30px;
+  }
   .testimonials .title {
-    padding: 30px 0;
+    padding: 0;
     font-size: 55px;
   }
   .testimonials .content {
     font-size: 18px;
-    padding: 0 30%;
+    width: 60%;
+    margin: 30px auto 10px;
   }
   .testimonials .name {
     font-size: 18px;
@@ -512,6 +529,15 @@ a:hover {
   .testimonials .image-author {
     width: 100px;
     margin-left: 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    transition: opacity 1s ease-in-out;
+  }
+  .testimonials .ava {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
   }
   .testimonials .review img:nth-child(odd) {
     visibility: inherit;
@@ -522,28 +548,41 @@ a:hover {
   .social {
     margin: 0;
   }
+  .social .container {
+    width: 100%;
+  }
   .social .title {
     font-size: 55px;
+    margin-bottom: 40px;
   }
   .social .list-image {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 20px;
-    justify-items: center;
+  }
+
+  .social .image {
+    width: 370px;
+    margin-right: 20px;
+    transition: opacity 1s ease-in-out;
   }
 
   .social .container {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
   }
   .social .image {
-    width: 430px;
+    max-width: 370px;
+    width: 100%;
+  }
+  .social img {
+    width: 100%;
   }
   .services {
     display: flex;
+    margin-bottom: 27px;
   }
   .services .image {
     width: 50%;
-    height: 1015px;
     object-fit: cover;
   }
   .services .content {
@@ -566,14 +605,34 @@ a:hover {
     margin-top: 50px;
   }
   .services .content li {
-    margin-bottom: 30px;
+    margin-bottom: 43px;
+    padding-left: 40px;
+    position: relative;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18.4px;
+    height: 18.4px;
+    background-color: #fff;
+    border-radius: 50%;
   }
   .action .title {
     font-size: 55px;
   }
   .action .discription {
-    padding: 10px 35% 50px;
+    margin: 10px auto 30px;
     font-size: 18px;
+    width: 40%;
   }
   .action a {
     font-size: 24px;

@@ -27,6 +27,7 @@
             <a class="shop-now" href="#">Shop now</a>
           </div>
         </div>
+        <img src="./image/jasmin-chew-WKD2vIe8Rb0-unsplash 1.png" alt="" />
       </div>
       <div class="benefits">
         <div class="container">
@@ -65,28 +66,32 @@
           </div>
         </div>
       </div>
-      <div class="time banner">
+      <div class="time">
+        <img
+          src="./image/angelica-echeverry-mI82mfLu538-unsplash 1.png"
+          alt=""
+        />
         <div class="container">
           <div class="content">
             <h2 class="title">Time is running out!</h2>
             <div class="count-down">
               <div class="day box">
-                <p class="number">01</p>
+                <p class="number" id="days">01</p>
                 <p class="text">days</p>
               </div>
               <p class="box">:</p>
               <div class="hour box">
-                <p class="number">22</p>
+                <p class="number" id="hours">22</p>
                 <p class="text">hours</p>
               </div>
               <p class="box">:</p>
               <div class="mins box">
-                <p class="number">14</p>
+                <p class="number" id="minutes">14</p>
                 <p class="text">Mins</p>
               </div>
               <p class="box">:</p>
               <div class="secs box">
-                <p class="number">30</p>
+                <p class="number" id="seconds">30</p>
                 <p class="text">secs</p>
               </div>
             </div>
@@ -106,8 +111,8 @@
               <div class="infor">
                 <h5 class="name">Product name</h5>
                 <div class="price">
-                  <p class="old-price">$55.00</p>
-                  <p class="new-price">$30.00</p>
+                  <p class="old-price">$200</p>
+                  <p class="new-price">$120</p>
                 </div>
               </div>
               <a href="#" class="buy"> Shop now </a>
@@ -120,8 +125,8 @@
               <div class="infor">
                 <h5 class="name">Product name</h5>
                 <div class="price">
-                  <p class="old-price">$55.00</p>
-                  <p class="new-price">$30.00</p>
+                  <p class="old-price">$200</p>
+                  <p class="new-price">$120</p>
                 </div>
               </div>
               <a href="#" class="buy"> Shop now </a>
@@ -134,8 +139,8 @@
               <div class="infor">
                 <h5 class="name">Product name</h5>
                 <div class="price">
-                  <p class="old-price">$55.00</p>
-                  <p class="new-price">$30.00</p>
+                  <p class="old-price">$200</p>
+                  <p class="new-price">$120</p>
                 </div>
               </div>
               <a href="#" class="buy"> Shop now </a>
@@ -148,8 +153,8 @@
               <div class="infor">
                 <h5 class="name">Product name</h5>
                 <div class="price">
-                  <p class="old-price">$55.00</p>
-                  <p class="new-price">$30.00</p>
+                  <p class="old-price">$200</p>
+                  <p class="new-price">$120</p>
                 </div>
               </div>
               <a href="#" class="buy"> Shop now </a>
@@ -183,28 +188,33 @@
               your product here
             </p>
             <h6 class="name">Customer's name</h6>
-            <img
-              src="./image/oleg-ivanov-FfLoik9L5Qg-unsplash 1.png"
-              alt="oleg-ivanov"
-              class="image-author"
-            />
-            <img
-              src="./image/sam-chapman-Ft7FrzDlOJc-unsplash 1.png"
-              alt="sam-chapman"
-              class="image-author active"
-            />
-            <img
-              src="./image/zahir-namane-0DMdB34scCM-unsplash 1.png"
-              alt="zahir-namane"
-              class="image-author"
-            />
+            <div class="ava">
+              <img
+                src="./image/oleg-ivanov-FfLoik9L5Qg-unsplash 1.png"
+                alt="oleg-ivanov"
+                class="image-author"
+                onclick="moveCarousel()"
+              />
+              <img
+                src="./image/sam-chapman-Ft7FrzDlOJc-unsplash 1.png"
+                alt="sam-chapman"
+                class="image-author active"
+                onclick="moveCarousel()"
+              />
+              <img
+                src="./image/zahir-namane-0DMdB34scCM-unsplash 1.png"
+                alt="zahir-namane"
+                class="image-author"
+                onclick="moveCarousel()"
+              />
+            </div>
           </div>
         </div>
       </div>
       <div class="social">
         <div class="container">
           <h2 class="title">Social Proofs</h2>
-          <div class="list-image">
+          <div class="list-image" id="image-gallery">
             <img
               src="./image/ann-VwJjVXcALHM-unsplash 2.png"
               alt="nhan"
@@ -261,5 +271,6 @@
         />
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
