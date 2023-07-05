@@ -119,20 +119,16 @@ a:hover {
 }
 .time .container {
   display: flex;
-  justify-content: flex-start;
   width: 50%;
-  padding-left: 70px;
-  align-items: center;
   background-color: var(--color-tan);
+  justify-content: center;
+  align-items: center;
 }
 .time img {
   width: 50%;
   object-fit: cover;
 }
-.time .content {
-  text-align: center;
-  margin: 10px auto;
-}
+
 .time h2 {
   font-size: 55px;
   color: var(--color-white);
@@ -166,8 +162,12 @@ a:hover {
 }
 .time .shop-now {
   font-size: 24px;
+
+  margin: 30px auto 0;
+}
+.time a {
   display: inline-block;
-  margin: 20px auto 0;
+  margin: 0 auto;
 }
 .products {
   margin: 100px auto;
@@ -201,6 +201,7 @@ a:hover {
   color: var(--title);
   font-family: "Playfair Display", serif;
   line-height: normal;
+  text-transform: capitalize;
 }
 .products .product p {
   margin: 10px 0 17px;
@@ -313,7 +314,7 @@ a:hover {
 .testimonials .image-author {
   width: 100px;
   margin-left: 30px;
-  transition: transform 0.3s ease;
+  transition: background-color 0.6s ease;
   cursor: pointer;
   padding-bottom: 30px;
 }
@@ -326,6 +327,23 @@ a:hover {
 .testimonials .active {
   width: 130px;
 }
+.prev,
+.next {
+  display: none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .social {
   width: 100%;
   margin: 0;
@@ -347,15 +365,73 @@ a:hover {
   max-width: 100%;
 }
 .social .image {
-  max-width: 370px;
-  width: 100%;
-  margin-right: 30px;
-  transition: opacity 1s ease-in-out;
+  width: 370px;
 }
 .social .container {
   max-width: 100%;
   margin: 0;
+  margin-bottom: 26px;
 }
+
+/* _____ */
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+/* Styling */
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+	height: 100%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.slider::before,
+.slider::after {
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 5%;
+	z-index: 2;
+}
+
+.slider::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.slider::before {
+	left: 0;
+	top: 0;
+}
+
+.slide-track {
+	animation: scroll 40s linear infinite;
+	display: flex;
+	width: calc(370px * 8);
+}
+
+.slide {
+	margin-right: 30px;
+  max-width: 370px;
+}
+
+/* ___________ */
+
 .services {
   display: flex;
   margin-bottom: 27px;
@@ -659,12 +735,31 @@ li::before {
   .testimonials h6 {
     margin: 0 0 20px;
   }
+
   .testimonials .image-author {
-    padding-bottom: 30px;
     margin-left: 0;
   }
-  .testimonials .review img:nth-child(odd) {
-    visibility: hidden;
+  .ava img {
+    display: none;
+  }
+  .ava img.active {
+    display: block;
+  }
+
+  .prev,
+  .next {
+    display: block;
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px;
   }
   .social {
     margin: 30px 0;

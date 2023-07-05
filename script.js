@@ -30,38 +30,38 @@ function updateCountdown() {
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
 
-const carousel = document.querySelector(".ava");
-const imgs = carousel.querySelectorAll(".image-author");
-const imgWidth = imgs[0].clientWidth;
+let slideIndex = 2;
+showSlides(slideIndex);
 
-let currentImgIndex = 0;
-
-function moveCarousel() {
-  const nextImgIndex = (currentImgIndex + 1) % imgs.length;
-  const prevImgIndex = (currentImgIndex - 1 + imgs.length) % imgs.length;
-
-  imgs[currentImgIndex].classList.remove("active");
-  imgs[nextImgIndex].classList.add("active");
-
-  // Move images in a circle
-  imgs[prevImgIndex].style.left = `-${imgWidth}px`;
-  imgs[nextImgIndex].style.left = `${imgWidth}px`;
-
-  setTimeout(() => {
-    imgs[prevImgIndex].style.left = `${imgWidth}px`;
-    imgs[currentImgIndex].style.left = `-${imgWidth}px`;
-
-    currentImgIndex = nextImgIndex;
-
-    setTimeout(() => {
-      imgs[currentImgIndex].style.left = "0";
-    }, 50);
-
-    setTimeout(moveCarousel, 2000);
-  }, 1000);
+function plusSlides(n) {
+  showSlides((slideIndex += n));
 }
 
-setTimeout(moveCarousel, 2000);
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("image-author");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+
 
 let currentIndex = 0;
 const intervalTime = 2000;
