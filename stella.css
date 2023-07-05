@@ -33,7 +33,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  width: 80%;
+  width: 70%;
 }
 .banner h1 {
   font-size: 72px;
@@ -365,64 +365,11 @@ a:hover {
   margin-bottom: 26px;
 }
 
-/* _____ */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
+.social .list-image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
-
-/* Styling */
-.slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100%;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.slider::before,
-.slider::after {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 5%;
-  z-index: 2;
-}
-
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
-}
-
-.slide-track {
-  animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(370px * 8);
-}
-
-.slide {
-  margin-right: 30px;
-  max-width: 370px;
-}
-
-/* ___________ */
 
 .services {
   display: flex;
@@ -764,23 +711,10 @@ li::before {
   .social .title {
     font-size: 20px;
   }
-  .slide-track {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: calc(165px * 2);
+  .social .list-image {
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-  }
-  .slide {
-    margin-right: 0;
-    max-width: 165px;
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-165px * 4));
-    }
+    justify-items: center;
   }
 
   .services {
