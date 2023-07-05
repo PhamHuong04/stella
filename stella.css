@@ -1,48 +1,61 @@
 .container {
-  max-width: 344px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 h2 {
   margin: 0;
 }
-
 .banner {
+  display: flex;
+  width: 100%;
   height: 798px;
 }
-
 .banner .container {
-  height: 100%;
+  width: 50%;
+  align-items: center;
   display: flex;
-  align-items: flex-end;
   background-color: var(--color-antiquewhite);
+
+  margin: 0;
 }
+.banner img {
+  width: 50%;
+  object-fit: cover;
+  height: 100%;
+}
+
 .banner .content {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  padding: 0 40px 0 20%;
   width: 100%;
   margin: 0 auto;
 }
 .banner h1 {
+  font-size: 72px;
   margin: 0;
   color: var(--title);
-  font-size: var(--font-size-17xl);
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Playfair Display", serif;
   margin-bottom: 25px;
 }
-
 .banner p {
   margin: 0;
 }
 .banner .discription {
+  font-size: 24px;
   color: var(--text);
-  font-size: var(--font-size-sm);
   margin-bottom: 37px;
 }
 a {
+  font-size: 36px;
+  padding: 10px 50px;
   text-decoration: none;
-  font-size: var(--font-size-5xl);
-  padding: 10px 20px;
   background-color: var(--color-white);
   text-transform: uppercase;
   cursor: pointer;
@@ -57,96 +70,122 @@ a:hover {
 }
 
 .benefits {
-  margin: 50px 0 30px;
+  margin: 91px auto;
   width: 100%;
 }
+
 .benefits h2 {
-  font-size: 20px;
+  font-size: 55px;
+  width: 65%;
+  margin: 0 auto 40px;
   color: var(--title);
   font-family: "Playfair Display", serif;
   font-weight: 700;
   text-align: center;
-  width: 80%;
-  margin: 0 auto 20px;
 }
+.benefits .benefit-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .benefits .benefits1 {
   display: flex;
   margin: 10px;
+  width: 28%;
 }
 .benefits .benefits1 img {
   width: 70px;
-  height: 60px;
+  height: 70px;
 }
 .benefits .content {
   margin-left: 30px;
 }
 .benefits .benefits1 .title {
-  font-size: 16px;
   font-weight: 700;
   color: var(--title);
   margin: 0;
   font-family: "Playfair Display", serif;
+  font-size: 24px;
 }
+
 .benefits .benefits1 p {
-  font-size: var(--font-size-sm);
+  font-size: 18px;
   color: var(--text);
 }
 .time {
   height: 480px;
+  display: flex;
 }
 .time .container {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  padding-left: 70px;
+  align-items: center;
   background-color: var(--color-tan);
 }
-
+.time img {
+  width: 50%;
+  object-fit: cover;
+}
+.time .content {
+  text-align: center;
+}
 .time h2 {
+  font-size: 55px;
   color: var(--color-white);
   font-family: "Playfair Display", serif;
   margin: 0;
   margin-bottom: 20px;
 }
+
 .time .count-down {
-  display: flex;
   justify-content: space-evenly;
+  width: 90%;
+  display: flex;
   align-items: center;
   margin: 0 auto;
 }
+
 .time .box {
   color: var(--color-white);
   font-weight: 700;
   text-align: center;
 }
 .time .number {
-  font-size: var(--font-size-5xl);
+  font-size: 42px;
   margin: 10px 0;
 }
 .time .text {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: normal;
   text-transform: capitalize;
   margin: 10px 0;
 }
 .time .shop-now {
-  font-size: 16px;
+  font-size: 24px;
   display: inline-block;
   margin: 20px auto 0;
 }
-
+.products {
+  margin: 100px auto;
+}
 .products .title {
-  font-size: 20px;
+  font-size: 55px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
   color: var(--title);
   text-align: center;
-  margin: 30px auto;
 }
 .products .product-list {
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-bottom: 68px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: auto;
 }
-
 .products .product {
-  max-width: 165px;
+  max-width: 270px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -154,21 +193,19 @@ a:hover {
   width: 100%;
 }
 .products .product .name {
+  font-size: 20px;
   margin: 17px 0 0;
-  font-size: 14px;
   font-weight: 700;
   color: var(--title);
   font-family: "Playfair Display", serif;
   line-height: normal;
 }
-
 .products .product p {
   margin: 10px 0 17px;
 }
-
 .products .product .price {
+  font-size: 20px;
   display: flex;
-  font-size: 13px;
   color: var(--text);
   justify-content: center;
 }
@@ -177,9 +214,9 @@ a:hover {
   text-decoration: line-through;
 }
 .products .product a {
+  font-size: 14px;
+  padding: 10px 30px;
   text-decoration: none;
-  font-size: 10px;
-  padding: 8px 15px;
   background-color: var(--color-white);
   text-transform: uppercase;
   cursor: pointer;
@@ -188,12 +225,14 @@ a:hover {
   border: 1px solid var(--text);
   display: inline-block;
 }
-
 .product a:hover {
   background-color: var(--text);
   color: var(--color-white);
 }
-
+.collection {
+  display: flex;
+  justify-content: space-between;
+}
 .bundle {
   background-image: url("./image/tessa-wilson-ECr_8nuXpBA-unsplash 1.png");
   height: 239px;
@@ -203,70 +242,95 @@ a:hover {
 .collection h3 {
   margin: 0;
 }
-
 .collection .content {
-  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  height: 100%;
 }
 .collection .title-collection {
-  font-size: 22px;
+  font-size: 36px;
+  width: 100%;
   font-weight: 700;
   color: var(--title);
   font-family: "Playfair Display", serif;
 }
 .collection .discription {
-  margin: 10px 0 20px;
+  font-size: 18px;
+  margin: 10px 0 0;
+  width: 100%;
 }
-
 .rings {
   margin-top: 20px;
   background-image: url("./image/mel-BN0HcaBdPug-unsplash 1.png");
   height: 239px;
   background-color: var(--color-white);
 }
+
+.bundle,
+.rings {
+  width: 49%;
+  background-position: top;
+  background-size: cover;
+  margin: 0;
+  height: 450px;
+  padding-bottom: 20px;
+}
 .testimonials {
+  padding: 50px 0 30px;
   background-color: var(--color-antiquewhite);
   margin: 50px 0;
   text-align: center;
 }
-
 .testimonials .title {
-  font-size: 20px;
+  padding: 0;
+  font-size: 55px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
   color: var(--title);
-  padding: 20px 0;
 }
-
 .testimonials .content {
-  font-size: 14px;
+  font-size: 18px;
+  width: 60%;
+  margin: 30px auto 10px;
   padding: 0 10%;
   color: var(--text);
 }
-
 .testimonials .name {
+  font-size: 18px;
   text-transform: uppercase;
   color: var(--text);
-  font-size: 14px;
   font-weight: 500;
 }
 .testimonials h6 {
   margin: 0 0 20px;
 }
 .testimonials .image-author {
+  width: 100px;
+  margin-left: 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
   padding-bottom: 30px;
 }
-.testimonials .review img:nth-child(odd) {
-  visibility: hidden;
+.testimonials .ava {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
-
+.testimonials .active {
+  width: 130px;
+}
 .social {
   width: 100%;
+  margin: 0;
 }
 .social .title {
-  font-size: 20px;
+  font-size: 55px;
+  margin-bottom: 40px;
   font-weight: 700px;
   text-align: center;
   color: var(--title);
@@ -274,24 +338,39 @@ a:hover {
   text-transform: capitalize;
 }
 .social .list-image {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
   margin-bottom: 20px;
+  display: grid;
+  justify-content: space-between;
   max-width: 100%;
 }
 .social .image {
-  width: 90%;
-}
-
-.services .image {
+  max-width: 370px;
   width: 100%;
+  margin-right: 20px;
+  transition: opacity 1s ease-in-out;
+}
+.social .container {
+  max-width: 100%;
+  margin: 0;
+}
+.services {
+  display: flex;
+  margin-bottom: 27px;
+}
+.services .image {
+  width: 50%;
   object-fit: cover;
 }
 .services .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
   padding: 30px 0;
   background-color: var(--color-tan);
-  margin-top: -10px;
   color: var(--color-white);
 }
 .services h2 {
@@ -299,47 +378,66 @@ a:hover {
   text-align: center;
 }
 .services .title {
+  font-size: 48px;
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 20px;
 }
 .services .content .title:first-child {
-  font-size: 36px;
+  font-size: 85px;
   text-transform: uppercase;
 }
 .services .content .title:last-child {
   text-transform: capitalize;
 }
-
 .services .content .list {
-  font-size: 14px;
+  margin-left: 0;
+  font-size: 24px;
+  margin-top: 50px;
   font-weight: 500;
-  margin-top: 20px;
 }
-
 .services .content li {
-  margin-bottom: 20px;
+  margin-bottom: 43px;
+  padding-left: 40px;
+  position: relative;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18.4px;
+  height: 18.4px;
+  background-color: #fff;
+  border-radius: 50%;
+}
 .action .content {
   text-align: center;
   background-color: var(--color-antiquewhite);
   padding: 83px 0 95px;
 }
 .action .title {
+  font-size: 55px;
   color: var(--title);
-  font-size: 20px;
   font-family: "Playfair Display", serif;
   margin: 0;
 }
 .action .discription {
-  padding: 10px 10%;
+  margin: 10px auto 30px;
+  font-size: 18px;
+  width: 40%;
   color: var(--text);
 }
 .action a {
+  font-size: 24px;
+  padding: 10px 40px;
   text-decoration: none;
-  font-size: 18px;
-  padding: 10px 20px;
   background-color: var(--color-white);
   text-transform: uppercase;
   cursor: pointer;
@@ -348,296 +446,283 @@ a:hover {
   border: 1px solid var(--text);
   display: inline-block;
 }
-
 .action a:hover {
   background-color: var(--text);
   color: var(--color-white);
 }
-
 .action img {
   width: 100%;
   height: auto;
 }
-
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container {
-    max-width: 1170px;
+    max-width: 344px;
     margin: 0 auto;
   }
   .banner {
     display: flex;
-    width: 100%;
-  }
-
-  .banner .container {
-    height: 100%;
-    width: 50%;
-    align-items: center;
+    flex-direction: column-reverse;
+    height: fit-content;
   }
   .banner img {
-    width: 50%;
+    width: 100%;
     object-fit: cover;
   }
-  .banner .content {
-    text-align: left;
+  .banner .container {
+    max-width: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
-    padding: 0 40px 0 20%;
+    align-items: flex-end;
+    background-color: var(--color-antiquewhite);
+  }
+  .banner .content {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 38px 0 50px;
   }
   .banner h1 {
-    font-size: 72px;
+    margin: 0;
+    color: var(--title);
+    font-size: var(--font-size-17xl);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 25px;
+  }
+  .banner p {
+    margin: 0;
   }
   .banner .discription {
-    font-size: 24px;
+    color: var(--text);
+    font-size: var(--font-size-sm);
+    margin-bottom: 20px;
   }
-  .banner a {
-    font-size: 36px;
-    padding: 10px 50px;
+  a {
+    font-size: var(--font-size-5xl);
+    padding: 10px 20px;
+    margin: 0 auto;
   }
   .benefits {
-    margin: 91px auto;
+    margin: 50px 0 30px;
+    width: 100%;
   }
   .benefits h2 {
-    font-size: 55px;
-    width: 65%;
-    margin: 0 auto 40px;
+    font-size: 20px;
+    color: var(--title);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  .benefits .benefits1 {
+    display: flex;
+    margin: 10px;
+    width: 100%;
   }
   .benefits .benefit-list {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
   .benefits .benefits1 img {
     width: 70px;
-    height: 70px;
+    height: 60px;
   }
-  .benefits .benefits1 {
-    width: 28%;
+  .benefits .content {
+    margin-left: 30px;
   }
   .benefits .benefits1 .title {
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--title);
+    margin: 0;
+    font-family: "Playfair Display", serif;
   }
   .benefits .benefits1 p {
-    font-size: 18px;
+    font-size: var(--font-size-sm);
+    color: var(--text);
   }
   .time {
-    display: flex;
+    flex-direction: column;
   }
   .time img {
-    width: 50%;
+    width: 100%;
     object-fit: cover;
   }
   .time .container {
-    display: flex;
-    justify-content: flex-start;
-    width: 50%;
-    padding-left: 70px;
-    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 35px 0;
   }
   .time .content {
-    text-align: center;
+    margin: 0 auto;
   }
   .time h2 {
-    font-size: 55px;
+    color: var(--color-white);
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
   }
   .time .number {
-    font-size: 42px;
+    font-size: var(--font-size-5xl);
+    margin: 10px 0;
   }
   .time .text {
-    font-size: 24px;
-  }
-  .time .count-down {
-    justify-content: space-evenly;
-    width: 90%;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin: 10px 0;
   }
   .time .shop-now {
-    font-size: 24px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 20px auto 0;
   }
   .products {
-    margin: 100px auto;
+    margin: 50px auto 20px;
   }
   .products .title {
-    font-size: 55px;
-    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--title);
+    text-align: center;
+    margin: 0 auto 20px;
   }
   .products .product-list {
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    margin-bottom: 68px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
   }
   .products .product {
-    max-width: 270px;
+    max-width: 165px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .products .product img {
+    width: 100%;
   }
   .products .product .name {
-    font-size: 20px;
+    margin: 17px 0 0;
+    font-size: 14px;
+    color: var(--title);
   }
   .products .product .price {
-    font-size: 20px;
+    font-size: 13px;
   }
   .products .product a {
-    font-size: 14px;
-    padding: 10px 30px;
+    font-size: 10px;
+    padding: 8px 15px;
   }
   .collection {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
   .bundle,
   .rings {
-    width: 49%;
-    background-position: top;
-    background-size: cover;
-    margin: 0;
-    height: 450px;
-    padding-bottom: 20px;
+    width: 100%;
+    height: 239px;
+    margin-bottom: 20px;
   }
   .collection .content {
-    width: 100%;
-    text-align: center;
-    padding: 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 0;
   }
-
   .collection .title-collection {
-    font-size: 36px;
-    width: 100%;
+    font-size: 22px;
   }
   .collection .discription {
-    font-size: 18px;
     margin: 10px 0 0;
-    width: 100%;
   }
   .testimonials {
-    padding: 50px 0 30px;
+    margin: 0;
   }
+
   .testimonials .title {
+    font-size: 20px;
     padding: 0;
-    font-size: 55px;
   }
   .testimonials .content {
-    font-size: 18px;
-    width: 60%;
-    margin: 30px auto 10px;
+    font-size: 14px;
+    width: 80%;
   }
   .testimonials .name {
-    font-size: 18px;
+    font-size: 14px;
+  }
+  .testimonials h6 {
+    margin: 0 0 20px;
   }
   .testimonials .image-author {
-    width: 100px;
-    margin-left: 30px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    transition: opacity 1s ease-in-out;
-  }
-  .testimonials .ava {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 0;
   }
   .testimonials .review img:nth-child(odd) {
-    visibility: inherit;
-  }
-  .testimonials .active {
-    width: 130px;
+    visibility: hidden;
   }
   .social {
-    margin: 0;
+    margin: 30px 0;
   }
-  /* .social .container {
-    width: 100%;
-  } */
   .social .title {
-    font-size: 55px;
-    margin-bottom: 40px;
+    font-size: 20px;
   }
   .social .list-image {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
     margin-bottom: 20px;
-  }
-
-  /* .social .image {
-    width: 370px;
-    margin-right: 20px;
-    transition: opacity 1s ease-in-out;
-  } */
-
-  .social .container {
     max-width: 100%;
-    margin: 0;
   }
   .social .image {
-    max-width: 370px;
-    width: 100%;
-    margin-right: 20px;
-    transition: opacity 1s ease-in-out;
-  }
-  .social img {
-    width: 100%;
+    width: 90%;
   }
   .services {
-    display: flex;
-    margin-bottom: 27px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 6px;
   }
   .services .image {
-    width: 50%;
-    object-fit: cover;
+    width: 100%;
   }
   .services .content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    padding: 30px 0;
     margin-top: 0;
   }
   .services .title {
-    font-size: 48px;
+    font-size: 20px;
   }
   .services .content .title:first-child {
-    font-size: 85px;
+    font-size: 36px;
   }
   .services .content .list {
-    margin-left: 0;
-    font-size: 24px;
-    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
   }
   .services .content li {
-    margin-bottom: 43px;
-    padding-left: 40px;
-    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
   }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
   li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18.4px;
-    height: 18.4px;
-    background-color: #fff;
-    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  .action .content {
+    text-align: center;
+    background-color: var(--color-antiquewhite);
+    padding: 43px 0;
   }
   .action .title {
-    font-size: 55px;
+    font-size: 20px;
   }
   .action .discription {
     margin: 10px auto 30px;
-    font-size: 18px;
-    width: 40%;
+    font-size: 14px;
+    width: 80%;
   }
   .action a {
-    font-size: 24px;
-    padding: 10px 40px;
+    font-size: 18px;
+    padding: 10px 20px;
   }
 }
