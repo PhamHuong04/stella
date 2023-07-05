@@ -113,7 +113,6 @@ a:hover {
   color: var(--text);
 }
 .time {
-  height: 480px;
   display: flex;
 }
 .time .container {
@@ -130,6 +129,7 @@ a:hover {
 }
 .time .content {
   text-align: center;
+  margin: 10px auto;
 }
 .time h2 {
   font-size: 55px;
@@ -553,6 +553,9 @@ li::before {
     width: 100%;
     max-width: 100%;
     padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .time .content {
     margin: 0 auto;
