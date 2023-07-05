@@ -61,27 +61,3 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-
-
-let currentIndex = 0;
-const intervalTime = 2000;
-let timer;
-
-function moveToNext() {
-  const carouselImages = document.querySelector(".list-image");
-  const imageWidth = carouselImages.querySelector(".image").clientWidth;
-  currentIndex = (currentIndex + 1) % carouselImages.childElementCount;
-  const displacement = -currentIndex * imageWidth;
-  carouselImages.style.transition = "transform 0.5s ease";
-  carouselImages.style.transform = `translateX(${displacement}px)`;
-}
-
-function startAutoplay() {
-  timer = setInterval(moveToNext, intervalTime);
-}
-
-function stopAutoplay() {
-  clearInterval(timer);
-}
-
-startAutoplay();
