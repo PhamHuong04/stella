@@ -24,7 +24,7 @@ p {
 .banner img {
   width: 50%;
   object-fit: cover;
-  height: 100%;
+  min-height: 100%;
 }
 
 .banner .content {
@@ -34,7 +34,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  padding: 0 10px 0 40px;
+  padding: 10px 10px 10px 40px;
 }
 .banner h1 {
   font-size: 72px;
@@ -123,6 +123,9 @@ a:hover {
   background-color: var(--color-tan);
   justify-content: center;
   align-items: center;
+}
+.time .content {
+  padding: 10px 0;
 }
 .time img {
   width: 50%;
