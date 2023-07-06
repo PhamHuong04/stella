@@ -45,7 +45,7 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("image-author");
-  let width = document.getElementsByClassName("body").offsetWidth;
+  let width = document.getElementsByClassName("testimonials").offsetWidth;
   if (width >= 768) {
     if (n > slides.length) {
       slideIndex = 1;
