@@ -31,40 +31,54 @@ const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
 
 
-let width = document.getElementById("testimonial").offsetWidth;
+// let width = document.getElementById("testimonial").offsetWidth;
 
-let slideIndex = 2;
-showSlides(slideIndex);
+// let slideIndex = 2;
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+// function plusSlides(n) {
+//   showSlides((slideIndex += n));
+// }
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+// function currentSlide(n) {
+//   showSlides((slideIndex = n));
+// }
 
 
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("image-author");
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   let dots = document.getElementsByClassName("image-author");
 
-  if (width >= 768) {
-    if (n > slides.length) {
-      slideIndex = 1;
+//   if (width >= 768) {
+//     if (n > slides.length) {
+//       slideIndex = 1;
+//     }
+//     if (n < 1) {
+//       slideIndex = slides.length;
+//     }
+//     for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//     }
+//     for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//     }
+//     slides[slideIndex - 1].style.display = "block";
+//     dots[slideIndex - 1].className += " active";
+//   }
+// }
+
+
+const buttonGroup = document.getElementById("ava");
+let prevButton = null;
+const buttonPressed = (e) => {
+  if (e.target.nodeName === "IMG") {
+    e.target.classList.add("active");
+    if (prevButton !== null) {
+      prevButton.classList.remove("active");
     }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    prevButton = e.target;
   }
-}
+};
+buttonGroup.addEventListener("click", buttonPressed);
