@@ -30,6 +30,9 @@ function updateCountdown() {
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
 
+
+let width = document.getElementById("testimonial").offsetWidth;
+
 let slideIndex = 2;
 showSlides(slideIndex);
 
@@ -41,11 +44,13 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
+
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("image-author");
-  let width = document.getElementsByClassName("testimonials").offsetWidth;
+
   if (width >= 768) {
     if (n > slides.length) {
       slideIndex = 1;
