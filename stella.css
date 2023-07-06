@@ -363,6 +363,8 @@ a:hover {
   max-width: 100%;
   margin: 0;
   margin-bottom: 26px;
+  padding: 0;
+
 }
 
 .social .list-image {
@@ -471,7 +473,6 @@ li::before {
   width: 100%;
   height: auto;
 }
-
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -789,8 +790,8 @@ li::before {
   }
 }
 
-@media only screen and (max-width: 1045px) {
-  .services h2{
-    font-size: 80px;
+@media only screen and (max-width: 1024px) {
+  .services .content .title:first-child {
+    font-size: 70px;
   }
 }
