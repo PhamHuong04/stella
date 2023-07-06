@@ -19,7 +19,7 @@ p {
   display: flex;
   background-color: var(--color-antiquewhite);
   justify-content: flex-end;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 .banner img {
   width: 50%;
@@ -137,7 +137,6 @@ a:hover {
 
 .time .count-down {
   justify-content: space-evenly;
-  width: 90%;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -183,10 +182,11 @@ a:hover {
   justify-items: center;
   margin-bottom: 68px;
   display: grid;
-  gap: 30px;
+  column-gap: 30px;
+  max-width: 100%;
 }
 .products .product {
-  max-width: 270px;
+  width: 100%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -282,10 +282,13 @@ a:hover {
   padding-bottom: 20px;
 }
 .testimonials {
-  padding: 50px 0 30px;
+  padding: 87px 0 92px;
   background-color: var(--color-antiquewhite);
-  margin: 50px 0;
+  margin: 50px 0 78px;
   text-align: center;
+}
+.testimonials .image-author-review {
+  display: none;
 }
 .testimonials .title {
   padding: 0;
@@ -297,9 +300,9 @@ a:hover {
 .testimonials .content {
   font-size: 18px;
   width: 60%;
-  margin: 30px auto 10px;
-  padding: 0 10%;
+  margin: 50px auto 20px;
   color: var(--text);
+  transition: opacity 1s ease-in-out;
 }
 .testimonials .name {
   font-size: 18px;
@@ -308,7 +311,7 @@ a:hover {
   font-weight: 500;
 }
 .testimonials h6 {
-  margin: 0 0 20px;
+  margin: 0 0 40px;
 }
 .testimonials .image-author {
   width: 100px;
@@ -326,22 +329,6 @@ a:hover {
 .testimonials .active {
   width: 130px;
 }
-.prev,
-.next {
-  display: none;
-}
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .social {
   width: 100%;
@@ -349,7 +336,7 @@ a:hover {
 }
 .social .title {
   font-size: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   font-weight: 700px;
   text-align: center;
   color: var(--title);
@@ -450,7 +437,7 @@ li::before {
   margin: 0;
 }
 .action .discription {
-  margin: 10px auto 30px;
+  margin: 60px auto 60px;
   font-size: 18px;
   width: 40%;
   color: var(--text);
@@ -462,7 +449,7 @@ li::before {
   background-color: var(--color-white);
   text-transform: uppercase;
   cursor: pointer;
-  color: var(--text);
+  color: var(--title);
   font-weight: 500;
   border: 1px solid var(--text);
   display: inline-block;
@@ -495,12 +482,13 @@ li::before {
     display: flex;
     align-items: flex-end;
     background-color: var(--color-antiquewhite);
+    padding-right: 0;
   }
   .banner .content {
     text-align: center;
     margin: 0 auto;
     width: 80%;
-    padding: 38px 0 50px;
+    padding: 38px 0 49px;
   }
   .banner h1 {
     margin: 0;
@@ -517,7 +505,7 @@ li::before {
   .banner .discription {
     color: var(--text);
     font-size: var(--font-size-sm);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   a {
     font-size: var(--font-size-5xl);
@@ -574,19 +562,20 @@ li::before {
   .time .container {
     width: 100%;
     max-width: 100%;
-    padding: 35px 0;
+    padding: 35px 0 37px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .time .content {
     margin: 0 auto;
+    width: 70%;
   }
   .time h2 {
     color: var(--color-white);
     font-family: "Playfair Display", serif;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 20px;
   }
   .time .number {
@@ -599,10 +588,13 @@ li::before {
     text-transform: capitalize;
     margin: 10px 0;
   }
+  .time .count-down {
+    width: 100%;
+  }
   .time .shop-now {
     font-size: 16px;
     display: inline-block;
-    margin: 20px auto 0;
+    margin: 15px auto 0;
   }
   .products {
     margin: 50px auto 20px;
@@ -617,11 +609,12 @@ li::before {
   .products .product-list {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 0;
+    column-gap: 15px;
   }
   .products .product {
-    max-width: 165px;
+    max-width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .products .product img {
     width: 100%;
@@ -662,15 +655,31 @@ li::before {
   }
   .testimonials {
     margin: 0;
+    padding: 29px 0 39px;
+    overflow-y: hidden;
   }
 
   .testimonials .title {
     font-size: 20px;
     padding: 0;
   }
+
+  .testimonials .review {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  section {
+    scroll-snap-align: start;
+    position: relative;
+    min-width: 100%;
+  }
+
   .testimonials .content {
     font-size: 14px;
     width: 80%;
+    margin: 30px auto 20px;
   }
   .testimonials .name {
     font-size: 14px;
@@ -678,19 +687,16 @@ li::before {
   .testimonials h6 {
     margin: 0 0 20px;
   }
-
-  .testimonials .image-author {
-    margin-left: 0;
-  }
-  .ava img {
+  .testimonials .ava {
     display: none;
   }
-  .ava img.active {
+  .testimonials .image-author-review {
     display: block;
+    margin: 0 auto;
   }
 
   .social {
-    margin: 30px 0;
+    margin: 36px 0 28px;
   }
   .social .image {
     max-width: 100%;
@@ -699,6 +705,7 @@ li::before {
   }
   .social .title {
     font-size: 20px;
+    margin-bottom: 26px;
   }
   .social .list-image {
     display: grid;
