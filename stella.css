@@ -321,6 +321,9 @@ a:hover {
   cursor: pointer;
   padding-bottom: 30px;
 }
+.testimonials .review-mobile {
+    display: none;
+  }
 .testimonials .ava {
   display: flex;
   align-items: center;
@@ -664,9 +667,12 @@ li::before {
     font-size: 20px;
     padding: 0;
   }
+  .testimonials .review-destop {
+    display: none;
+  }
 
-  .testimonials .review {
-    display: flex  !important;
+  .testimonials .review-mobile {
+    display: flex !important;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -695,7 +701,9 @@ li::before {
     display: block;
     margin: 0 auto;
   }
-
+  .destop {
+    display: none;
+  }
   .social {
     margin: 36px 0 28px;
   }
