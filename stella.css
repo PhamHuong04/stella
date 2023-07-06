@@ -669,7 +669,8 @@ li::before {
   .testimonials {
     margin: 0;
     padding: 29px 0 39px;
-    overflow-y: hidden;
+    overflow-x: hidden;
+
   }
 
   .testimonials .title {
@@ -681,11 +682,15 @@ li::before {
   }
 
   .testimonials .review-mobile {
-    display: flex !important;
+    display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
   section {
     scroll-snap-align: start;
     position: relative;
