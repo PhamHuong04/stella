@@ -386,7 +386,8 @@ a:hover {
   background-color: var(--color-tan);
   color: var(--color-white);
 }
-.services h2 {
+.services h2,
+.services h3 {
   margin: 0;
   text-align: center;
 }
@@ -405,7 +406,7 @@ a:hover {
 .services .content .list {
   margin-left: 0;
   font-size: 24px;
-  margin-top: 50px;
+  margin-top: 140px;
   font-weight: 500;
 }
 .services .content li {
@@ -752,7 +753,7 @@ li::before {
   .services .content .list {
     font-size: 14px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .services .content li {
     margin-bottom: 20px;
