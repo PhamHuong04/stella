@@ -1,6 +1,7 @@
 .container {
-  max-width: 1170px;
+  max-width: 1190px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 h2 {
   margin: 0;
@@ -11,7 +12,7 @@ p {
 .banner {
   display: flex;
   width: 100%;
-  height: 798px;
+  height: 100%;
 }
 .banner .container {
   width: 50%;
@@ -33,6 +34,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   height: 100%;
+  padding: 0 10px 0 40px;
 }
 .banner h1 {
   font-size: 72px;
@@ -102,7 +104,7 @@ a:hover {
 .benefits .benefits1 .title {
   font-weight: 700;
   color: var(--title);
-  margin: 0;
+  margin: 0 auto 10px;
   font-family: "Playfair Display", serif;
   font-size: 24px;
 }
@@ -322,8 +324,8 @@ a:hover {
   padding-bottom: 30px;
 }
 .testimonials .review-mobile {
-    display: none;
-  }
+  display: none;
+}
 .testimonials .ava {
   display: flex;
   align-items: center;
@@ -509,7 +511,7 @@ li::before {
   .banner .discription {
     color: var(--text);
     font-size: var(--font-size-sm);
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
   }
   a {
     font-size: var(--font-size-5xl);
