@@ -476,7 +476,7 @@ li::before {
 
 @media only screen and (max-width: 1024px) {
   .services .content .title:first-child {
-    font-size: 70px;
+    font-size: 65px;
   }
 }
 
