@@ -743,6 +743,15 @@ li::before {
     width: 100%;
     margin-left: 0px;
   }
+  .social .image:nth-child(1) {
+    order: 3;
+  }
+  .social .image:nth-child(2) {
+    order: 1;
+  }
+  .social .image:nth-child(3) {
+    order: 2;
+  }
   .social .title {
     font-size: 20px;
     margin-bottom: 26px;
