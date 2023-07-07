@@ -514,7 +514,7 @@ li::before {
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Playfair Display", serif;
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
   }
   .banner p {
     margin: 0;
