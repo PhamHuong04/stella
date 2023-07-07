@@ -474,6 +474,12 @@ li::before {
   height: auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .services .content .title:first-child {
+    font-size: 70px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 344px;
@@ -795,8 +801,4 @@ li::before {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .services .content .title:first-child {
-    font-size: 70px;
-  }
-}
+
