@@ -120,15 +120,17 @@ a:hover {
   text-align: center;
   background-color: var(--color-tan);
 }
-.time .container {
+/* .time .container {
+  
+} */
+.time .content {
   display: flex;
-  width: 50%;
+  flex-direction: column;
   background-color: var(--color-tan);
   justify-content: center;
   align-items: center;
-}
-.time .content {
   padding: 10px 0;
+  margin: 0 auto;
 }
 .time img {
   width: 50%;
@@ -148,6 +150,7 @@ a:hover {
   display: flex;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .time .box {
@@ -512,7 +515,6 @@ li::before {
     padding: 38px 0 49px;
   }
   .banner h1 {
-    margin: 0;
     color: var(--title);
     font-size: var(--font-size-17xl);
     font-weight: 700;
@@ -580,15 +582,16 @@ li::before {
     width: 100%;
     object-fit: cover;
   }
-  .time .container {
+  /* .time .container {
     width: 100%;
     max-width: 100%;
     padding: 35px 0 37px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
   .time .content {
+    padding: 35px 0 37px;
     margin: 0 auto;
     width: 70%;
   }
@@ -664,7 +667,7 @@ li::before {
   .bundle,
   .rings {
     width: 100%;
-    height: 239px;
+    min-height: 239px;
     margin-left: 0;
   }
   .collection .content {
