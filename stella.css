@@ -34,7 +34,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  padding: 10px 10px 10px 40px;
+  padding: 10px 10px 10px 0;
 }
 .banner h1 {
   font-size: 72px;
