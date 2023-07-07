@@ -117,6 +117,7 @@ a:hover {
 .time {
   display: flex;
   text-align: center;
+  background-color: var(--color-tan);
 }
 .time .container {
   display: flex;
