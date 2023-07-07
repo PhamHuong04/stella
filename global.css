@@ -1,7 +1,8 @@
 body {
   margin: 0;
   line-height: normal;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   padding: 0;
 }
 
@@ -30,4 +31,3 @@ body {
   /* border radiuses */
   --br-341xl: 360px;
 }
-
