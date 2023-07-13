@@ -54,6 +54,7 @@ p {
   color: var(--text);
   margin-bottom: 37px;
   width: 90%;
+  font-weight: 400;
   
 }
 a {
@@ -102,6 +103,7 @@ a:hover {
 }
 .benefits .content {
   margin-left: 30px;
+
 }
 .benefits .benefits1 .title {
   font-weight: 700;
@@ -114,6 +116,10 @@ a:hover {
 .benefits .benefits1 p {
   font-size: 18px;
   color: var(--text);
+}
+
+.benefits .discription {
+    font-weight: 400;
 }
 .time {
   display: flex;
@@ -143,6 +149,7 @@ a:hover {
   font-family: "Playfair Display", serif;
   margin: 0;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .time .count-down {
@@ -164,7 +171,7 @@ a:hover {
 }
 .time .text {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: capitalize;
   margin: 10px 0;
 }
@@ -221,10 +228,14 @@ a:hover {
   display: flex;
   color: var(--text);
   justify-content: center;
+  font-weight: 500;
+
 }
 .products .product .old-price {
   margin-right: 10px;
   text-decoration: line-through;
+  font-weight: 400;
+
 }
 .products .product a {
   font-size: 14px;
@@ -234,7 +245,7 @@ a:hover {
   text-transform: uppercase;
   cursor: pointer;
   color: var(--text);
-  font-weight: 500;
+  font-weight: 400;
   border: 1px solid var(--text);
   display: inline-block;
 }
@@ -248,7 +259,6 @@ a:hover {
 }
 .bundle {
   background-image: url("./image/tessa-wilson-ECr_8nuXpBA-unsplash 1.png");
-  height: 239px;
   background-color: var(--color-white);
 }
 
@@ -275,10 +285,10 @@ a:hover {
   font-size: 18px;
   margin: 10px 0 0;
   width: 100%;
+  font-weight: 400;
 }
 .rings {
   background-image: url("./image/mel-BN0HcaBdPug-unsplash 1.png");
-  height: 239px;
   background-color: var(--color-white);
   margin-left: 30px;
 }
@@ -290,6 +300,8 @@ a:hover {
   background-size: cover;
   min-height: 450px;
   padding-bottom: 20px;
+  display: flex;
+    align-items: flex-end;
 }
 .testimonials {
   padding: 87px 0 92px;
@@ -314,6 +326,7 @@ a:hover {
   margin: 50px auto 20px;
   color: var(--text);
   transition: opacity 1s ease-in-out;
+  font-weight: 400;
 }
 .testimonials .name {
   font-size: 18px;
@@ -458,6 +471,7 @@ li::before {
   font-size: 18px;
   width: 45%;
   color: var(--text);
+  font-weight: 400;
 }
 .action a {
   font-size: 24px;
