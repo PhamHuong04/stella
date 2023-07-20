@@ -465,6 +465,7 @@ li::before {
   color: var(--title);
   font-family: "Playfair Display", serif;
   margin: 0;
+  font-weight: 700;
 }
 .action .discription {
   margin: 60px auto 60px;
