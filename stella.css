@@ -21,6 +21,7 @@ p {
   display: flex;
   background-color: var(--color-antiquewhite);
   justify-content: flex-end;
+  padding: 0 20px;
 }
 .banner img {
   width: 50%;
@@ -518,13 +519,13 @@ li::before {
     width: 100%;
     object-fit: cover;
   }
-  .banner .container {
+  .banner .text {
     max-width: 100%;
     width: 100%;
     display: flex;
     align-items: flex-end;
     background-color: var(--color-antiquewhite);
-    padding: 0;
+    padding: 0 15px;
   }
   .banner .content {
     text-align: center;
