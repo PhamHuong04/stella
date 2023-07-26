@@ -521,12 +521,8 @@ li::before {
     object-fit: cover;
   }
   .banner .text {
-    max-width: 100%;
     width: 100%;
-    display: flex;
-    align-items: flex-end;
-    background-color: var(--color-antiquewhite);
-    padding: 0 15px;
+    padding: 0 ;
   }
   .banner .content {
     text-align: center;
